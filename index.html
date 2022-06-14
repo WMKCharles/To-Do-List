@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+          <h1>:: ToDo List ::</h1>
+        </div>
+        <div class="add-task">
+          <input id="new-task-input" type="text" placeholder="Add A Task..." />
+          <button class="add-task-btn">+</button>
+        </div>
+        <div class="task-list-header">
+          <h2>Tasks</h2>
+          <button class="remove-complete-btn">Clear Complete</button>
+        </div>
+        <div class="task-list-wrapper">
+          <ul class="task-list"></ul>
+        </div>
+    </div>
+    <template id="task-template">
+        <li class="task">
+            <input type="checkbox" />
+            <label>
+              <span class="check-mark">&#10004;</span>
+              <span class="custom-checkbox"></span>
+            </label>
+          </li>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
